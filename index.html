@@ -8,16 +8,15 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Human Rights Visualizations</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="style.css" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,7 +39,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">Human Rights Visualizations</a>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -66,45 +65,50 @@
 
       <div class="container">
         <div class="page-header">
-      
-                        
-                        
-                    
-
-      
-        
-        
-
-      
-  
                         <h1>CEDAW case-law</h1>
 
       <div class="map">                  
       <script type="text/javascript" src="d3/d3/d3.v3.js"></script>
       <script type="text/javascript" src="d3/d3/d3.layout.js"></script>
       <script type="text/javascript" src="d3/d3/d3.tip.js"></script>
-      <script src="http://d3js.org/topojson.v1.min.js"></script>
+      <!-- commented out <script type="text/javascript" src="js/d3-bootstrap.js"></script> -->
+      <script src="d3/d3/topojson.v1.min.js"></script>
       <script type="text/javascript" src="tooltip.js"></script>
       <script type="text/javascript" src="script.js"></script>
     </div>
 
-<div>
-<a name="The Netherlands">The Netherlands</a>
-
-<div id="container" style="max-width: 400px; height: 300px; margin: 0 auto">
+<div ><h2>General analysis of case-law</h2>
+  <div id="container-general" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 <script src="js/jquery.min.js"></script>
 <script src="js/highcharts.js"></script>
-
 <script src="js/exporting.js"></script>
+<script src="admissibility.js"></script>
 
-<script src="js/netherlands.js"></script>
+
 
 </div>
 
 
-        </div>
-      <div style="height: 500px;"><a name="Canada">Canada</a></div>
-      <div style="height: 500px;"><a name="Brazil">Brazil</a></div>
+<h2>Country-specific analysis</h2>
+<div class="country-sections">
+<h3><a name="The Netherlands">The Netherlands</a></h3>
+
+<div id="container" style="max-width: 400px; height: 300px; margin: 0 auto; float:left;">
+
+
+<script src="js/netherlands.js"></script>
+
+</div>
+</div>
+
+        <div class="country-sections">
+      <h3><a name="Canada">Canada</a></h3>
+      <div id="container-canada" style="max-width: 400px; height: 300px; margin: 0 auto; float:left;">
+      <script src="js/canada.js"></script>
+      </div>
+    </div>
+
+      <div class="country-sections"><a name="Brazil">Brazil</a></div>
                                 
      
        </div> <!-- #main -->
@@ -120,7 +124,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

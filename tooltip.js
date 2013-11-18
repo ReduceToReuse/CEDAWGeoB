@@ -6,9 +6,9 @@ d3.helper.tooltip = function(accessor){
         var bodyNode = d3.select('body').node();
         selection.on("mouseover", function(d, i){
             // Clean up lost tooltips
-            d3.select('body').selectAll('div.tooltip').remove();
+            d3.select('body').selectAll('div.d3-helper-tooltip').remove();
             // Append tooltip
-            tooltipDiv = d3.select('body').append('div').attr('class', 'tooltip');
+            tooltipDiv = d3.select('body').append('div').attr('class', 'd3-helper-tooltip');
             var absoluteMousePos = d3.mouse(bodyNode);
             tooltipDiv.style('left', (absoluteMousePos[0] + 10)+'px')
                 .style('top', (absoluteMousePos[1] - 15)+'px')

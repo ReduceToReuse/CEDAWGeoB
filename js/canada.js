@@ -1,16 +1,16 @@
 $(function () {
-        $('#container').highcharts({
+        $('#container-canada').highcharts({
     
             chart: {
                 type: 'column'
             },
     
             title: {
-                text: 'Cases brought against the Netherlands grouped by topic'
+                text: 'Cases brought against Canada grouped by topic'
             },
     
             xAxis: {
-                categories: ['Employment - maternity leave', 'Sex trafficking', 'Unknown']
+                categories: ['Asylum claim - domestic violence', 'Marriage and family relations', 'Unknown']
             },
     
             yAxis: {
@@ -36,15 +36,15 @@ $(function () {
     
             series: [{
                 name: 'Admissible',
-                data: [1, 0, 0],
-                stack: 'male'
-            }, {
-                name: 'Inadmissible',
                 data: [0, 1, 0],
                 stack: 'male'
             }, {
+                name: 'Inadmissible',
+                data: [2, 0, 0],
+                stack: 'male'
+            }, {
                 name: 'Discontinued',
-                data: [0, 0, 2],
+                data: [0, 0, 1],
                 stack: 'female'
             
             }]

@@ -8,7 +8,8 @@
   stroke: #fff;
   stroke-width: .5px;
 }
-.tooltip{ background-color:rgba(68,136,187,0.75);;
+.d3-helper-tooltip{ 
+          background-color:rgba(68,136,187,0.75);
           margin: 10px;
           height: 80px;
           width: 300px;

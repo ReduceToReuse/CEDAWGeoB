@@ -7096,3 +7096,8 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.country-sections {
+  float: left;
+  width: 57%;
+}
