@@ -7101,3 +7101,5 @@ td.visible-print {
   float: left;
   width: 57%;
 }
+
+.grabbing { cursor: url(img/closedhand.cur), pointer !important; } /*//for the panzoom plugin*/
