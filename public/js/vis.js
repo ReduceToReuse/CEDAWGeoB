@@ -12,7 +12,14 @@
           		values: data.countries.number_of_cases
           		// min: jvm.min(metroPopValues),
           		// max: jvm.max(metroPopValues)
-        		}]
+        		}],
+        		// regionStyle: [
+        		// {
+        		//         values: data.countries.number_of_cases,
+        		//         scale: data.countries.number_of_cases < 2:'#C8EEFF', data.countries.number_of_cases >2: '#0071A4',
+        		//         attribute: 'fill',
+        		//         normalizeFunction: 'linear'
+        		//       }]
         	},
 	        onMarkerLabelShow: function(event, label, index){
 	             label.html(
